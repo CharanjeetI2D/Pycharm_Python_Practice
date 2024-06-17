@@ -1,17 +1,30 @@
-todos = ['Cleaning', 'washing', 'programming']
-
 while True:
     todo_action = input('Type operation: add, show, edit, exit, remove : ').strip()
 
     match todo_action:
 
         case 'add':
-            new_item = input("Please enter value to add: ")
+            new_item = input("Please enter value to add: ").capitalize() + "\n"
+
+            file = open('Todos.txt', 'r')
+            todos = file.readlines()
+            file.close()
+
             todos.append(new_item)
 
+            file = open('Todos.txt', 'w')   # Create a file object to write to file
+            file.writelines(todos)
+            file.close()
+
+
         case 'display' | 'show':
-            for items in todos:
-                all_items = f"{todos.index(items) + 1} {items}"
+
+            read_file = open('Todos.txt', 'r')
+            todos = read_file.readlines()
+            read_file.seek(0)
+
+            for index, items in enumerate(todos):
+                all_items = f"{index + 1} {items}"
                 print(all_items)
 
         case 'edit':
