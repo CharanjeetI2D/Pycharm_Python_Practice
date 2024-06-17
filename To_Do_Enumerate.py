@@ -1,7 +1,7 @@
 todos = ['Cleaning', 'washing', 'programming']
 
 while True:
-    todo_action = input('Type operation: add, show, edit, exit, complete : ').strip()
+    todo_action = input('Type operation: add, show, edit, exit, remove : ').strip()
 
     match todo_action:
 
@@ -33,9 +33,6 @@ while True:
             user_input = int(input("Please enter item number you want to remove: "))
             todos.pop(user_input - 1)
             print(f"New list: ", todos)
-
-
-
 
         case 'exit' | 'quit':
             break
