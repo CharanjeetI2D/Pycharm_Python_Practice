@@ -1,7 +1,4 @@
-Clean
-Throw
-Play
-Shower
-Fix
-Print
 Pandas
+Trim
+Roll
+Pring
