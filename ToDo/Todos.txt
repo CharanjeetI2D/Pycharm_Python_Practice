@@ -1,6 +1,7 @@
 Player
-Timp
 clean the bag
-show movie
+Take Garbage
  add roncy
 buy a camera
+Make soup
+Drink Water
