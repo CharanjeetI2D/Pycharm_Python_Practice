@@ -1,0 +1,9 @@
+[{"question_text": "Where is Pune located?",
+"alternatives": ["Maharashtra", "Karnataka", "Punjab", "Tamil Nadu"],
+"correct answer": 1},
+{
+   "question_text": "Where is London located?",
+   "alternatives": ["UK", "EU"],
+   "correct answer": 1
+}
+]
